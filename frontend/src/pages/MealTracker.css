@@ -1,0 +1,173 @@
+.meal-tracker-page {
+  padding: 3rem 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding: 1rem;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem;
+}
+
+.title-icon {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  animation: bounce 2s infinite;
+}
+
+.section-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0.5rem 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideInFromTop 0.8s ease-out forwards;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats-icon {
+  font-size: 1.5rem;
+  color: #4CAF50;
+}
+
+.log-meal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(76, 175, 80, 0.2);
+}
+
+.log-meal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+}
+
+.log-meal-btn:active {
+  transform: translateY(0);
+}
+
+.log-meal-btn .me-2 {
+  font-size: 1.25rem;
+}
+
+.log-meal-btn .ms-2 {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.log-meal-btn:hover .ms-2 {
+  transform: translateX(4px);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .meal-tracker-page {
+    padding: 2rem 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+    padding: 0.75rem;
+  }
+
+  .section-header h1 {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .log-meal-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9375rem;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .title-icon,
+  .log-meal-btn,
+  .log-meal-btn .ms-2 {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .section-header h1,
+  .section-subtitle {
+    animation: none !important;
+  }
+} 

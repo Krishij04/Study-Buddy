@@ -1,0 +1,22 @@
+{
+    "age": 0,
+    "sex": "male",
+    "weight_kg": 0.0,
+    "height_cm": 0.0,
+    "activity_level": "moderate",
+    "goal": "lose_weight",
+    "diet_type": "Vegetarian",
+    "allergies": [],
+    "cuisines": {
+        "breakfast": [
+            "Fruit"
+        ],
+        "lunch": [
+            "Indian"
+        ],
+        "dinner": [
+            "Chinese"
+        ],
+        "snack": []
+    }
+}
